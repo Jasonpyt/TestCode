@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>下拉列表</title>
+	</head>
+	<body>
+		<!--
+			select 选中
+			  <select></select>  下拉框
+			  下拉框中的选项叫 <option></option>
+			    name属性写在select中
+			      value属性写在option中
+			        不写 value属性默认 就是option标签体中内容
+			        
+			    默认是选中第一条，
+			      默认想要指定哪一条怎么做呢？
+			      select选中属性叫做 selected
+			      
+			  文本域 就是一块区域  
+			     这块区域中 书写文字
+			     <textarea></textarea>
+			     
+			     属性 cols  rows
+		-->
+		<form action="#" method="get" name="myform">
+			姓名：<input type="text" name="name" placeholder="请录入姓名"><br/>
+			居住城市：
+			   <select name="city">
+			   	  <option>重庆</option>
+			   	  <option value="bj">北京</option>
+			   	  <option selected="selected">上海</option>
+			   	  <option>东莞</option>
+			   </select>
+			  <br/> 
+			  <!--
+			  	下拉列表的 多选情况
+			  -->
+			 居住区域：
+			   <select name="area" multiple="multiple" size="2">
+			   	  <option>海淀</option>
+			   	  <option>昌平</option>
+			   	  <option>朝阳</option>
+			   	  <option>大兴</option>
+			   </select>  
+			   <br/>
+			  个人说明：<textarea cols="10" rows="10" name="textarea"></textarea>
+			   <br/>
+			<input type="submit"/>
+		</form>
+		
+	</body>
+</html>

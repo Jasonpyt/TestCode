@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+   1:xml文档声明
+   2：导入约束标签
+   3：根据提示写代码
+-->
+<!DOCTYPE beans SYSTEM "bean.dtd">
+<beans>
+    <bean id="" className="">
+            <property name="" value="">文本来了</property>
+    </bean>
+    <import resource="">skskj</import>
+    <import resource=""></import>
+ </beans>

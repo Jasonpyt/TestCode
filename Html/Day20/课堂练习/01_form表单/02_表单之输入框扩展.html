@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>扩展的输入框</title>
+	</head>
+	<body>
+		<!--
+			因为不同项目注册需要的字段不同，需要完成的案例中没有覆盖所有的表单元素，以下标签使用也需要大家掌握。
+   input中 
+      type 属性 进行下列选择
+		
+		- checkbox： 复选框   ***
+		          也是一组标签，那么就要求name属性一样,每个里面给value
+		- image: 按钮上的图片
+		        按钮  上面是图片 
+		        是一个图片按钮  src就是关联那个图片
+		-
+		  file：文件上传组件,提供"浏览"按下可以选择需要上传文件.
+		  
+		- hidden：隐藏字段. 数据会发送给服务器，但浏览器不进行显示。
+		
+		- reset：重置按钮。将表单恢复到默认值。
+		- button：普通按钮，常用于与JavaScript结合使用。
+		
+		
+		
+		扩展一个属性
+		  对于单选和复选来说 
+		    checked 就代表被选中
+		    
+		 - readonly：是否只读
+         - disabled：是否可用
+   
+		-->
+		<form name="myform" action="#" method="get">
+			<input type="text" value="你只能看" readonly="readonly" name="read"/><br/>
+			<input type="text" value="你连用都不能用" disabled="disabled" name="dis"/><br/>
+			
+			用户名：<input type="text" name="username" placeholder="请录入用户名"/><br/>
+			
+			密&nbsp;&nbsp;码：<input type="password" name="password"/><br />
+			
+			性   别：<input type="radio" name="sex" value="boy" checked="checked"/>男<input type="radio" name="sex" value="girl"/>女<br/>
+			
+			爱   好：<input type="checkbox" name="hobby" value="smoke" checked="checked"/>抽烟
+			       <input type="checkbox" name="hobby" value="drink"/>喝酒
+			       <input type="checkbox" name="hobby" value="fireheadair"/>烫头<br/>
+			上传个人头像：<input type="file" name="file" />
+			<br/>      
+			<!--
+				隐藏输入框 但是可以  提交给  服务器
+			-->
+			<input type="hidden" name="hidden" value="我是隐藏的数据" /><br />
+			<!--图片按钮-->       
+			<input type="reset" />
+		    <input type="image" src="../img/btn.jpg" />       
+			<input type="submit"  value="点我呀"/>
+			<!--<input type="button" />
+			<button>我是一个按钮</button>-->
+		</form>
+	</body>
+</html>

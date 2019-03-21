@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="dom4j-1.6.1 (2)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Day24/code/xml/lib/dom4j-1.6.1.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day24/code/xml/lib/jaxen-1.1-beta-6.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

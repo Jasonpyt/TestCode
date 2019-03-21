@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>form</title>
+	</head>
+	<body>
+		<input type="text" value="传智播客12周年_1" name="tname"/>
+		<br />
+		<input type="text" value="传智播客12周年_2" name="tname"/>
+		<br />
+		<input type="text" value="传智播客12周年_3" name="tname"/>
+		<br />
+		<input type="button" value="保存1" name="ok" />
+		<br />
+		<select name="ed" id="edu">
+			<option>博士</option><option>硕士</option><option>本科</option>
+			<option>幼儿园</option>
+		</select>
+		
+		<select name="job" id="job">
+			<option>美容</option><option>it</option><option>程序猿</option>
+			<option>建筑师</option>
+		</select>
+		<input type="button" value="打印option选中的值" onclick="showSelect" />
+	</body>
+	
+	<script type="text/javascript">
+		var inputs = document.getElementsByTagNameNS("input");
+		for(var i = 0; i< inputs.length; i++){
+			if(inputs[i].type == "text"){
+				alert(inputs[i].value);
+			}
+		}
+		
+		 var options =.getElementsByTagName("option")
+			for(var i = 0; i<options.length; i++){
+				alert(options[i].value);
+			}
+		
+	</script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>属性选择器</title>
+		
+		<!--
+			
+			要求  普通文本框录入颜色 红色
+			     密码框默认
+			     
+			     真正的 是要求
+			     input标签上 
+			       type属性是text 变成红色
+			       
+			   书写规范 
+			     基本选择器[标签属性=’标签属性值’]{
+			     	样式。。。
+			     }
+			     
+			     该选择器，是对“基本选择器”的扩展，对一组标签进一步过滤。例如：
+		-->
+		<style type="text/css">
+			input[type='text']{
+				color: red;
+			}
+			
+		</style>
+	</head>
+	<body>
+		姓名：<input type="text" /><br/>
+		密码：<input type="password" />
+	</body>
+</html>

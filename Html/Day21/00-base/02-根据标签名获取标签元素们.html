@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>form.html</title>
+
+    <meta charset="UTF-8">
+  </head>
+  <body>
+	   <form name="form1" action="test.html" method="post" >
+  	   	  <input type="text" name="tname" value="传智播客12周年_1"  id="tid_1"  ><br>
+				  <input type="text" name="tname" value="传智播客12周年_2"  id="tid_2"  ><br>
+				  <input type="text" name="tname" value="传智播客12周年_3"  id="tid_3"  ><br>
+				  <input type="button" name="ok" value="保存1"/>
+  	 </form>
+	   
+	   <select name="edu" id="edu">
+	   	  <option value="博士">博士^^^^^</option>
+			  <option value="硕士" selected="selected">硕士^^^^^</option>
+			  <option value="本科" >本科^^^^^</option>
+			  <option value="幼儿园">幼儿园^^^^^</option>
+	   </select>
+	   
+	   <select name="job" id="job" >
+	   	  <option value="美容">美容^^^^^</option>
+			  <option value="IT">IT^^^^^</option>
+			  <option value="程序员">程序员^^^^^</option>
+			  <option value="建筑师">建筑师^^^^^</option>
+	   </select>
+	   <input type="button" value="打印option选中的值" onclick="showSelect()" />
+  </body>
+  
+  <script  type="text/javascript">
+    //获取所有的input元素,得到每一个input元素 输出value值
+    // 通过 根据标签名获取元素的方法 得到所有的input标签
+    var inputs = document.getElementsByTagName("input");
+     // inputs是一个数组   
+     // 遍历
+//   for(var i = 0;i<inputs.length;i++){
+////   	   inputs[i] 每一个input元素
+//      alert(inputs[i].value);
+//   }
+
+		//输出type="text"中 value属性的值 不包含按钮(button)
+//      for(var i = 0;i<inputs.length;i++){
+////   	   inputs[i] 每一个input元素
+//      //  input标签的type属性 是 text
+//      if(inputs[i].type=="text"){
+//      	  alert(inputs[i].value);
+//      }
+//      
+//    } 
+        
+    //输出所有下拉选 id="edu"中option标签中 value属性的值
+     // 通过id获取 id为edu的下拉框元素
+//   var eduE = document.getElementById("edu");
+//   
+//   var opts = eduE.getElementsByTagName("option");
+//   for (var i = 0; i<opts.length; i++) {
+//   	  alert(opts[i].value);
+//   }
+     
+  	//输出所有下拉选select的option标签中value的值
+     var options = document.getElementsByTagName("option");
+//   for (var i = 0; i<options.length; i++) {
+//   	  alert(options[i].value);
+//   }
+  	 
+  	//输出选中的值
+      for (var i = 0; i<options.length; i++) {
+//  options[i]  每一个 选项 
+         // 选项要被选中的 
+         //  被选中了 它的selected属性  判断的值为 true
+         if(options[i].selected){
+//       	  alert(options[i].value);
+            document.write(options[i].value);
+         }
+     }
+  	
+  </script>
+  
+  
+  
+  
+</html>

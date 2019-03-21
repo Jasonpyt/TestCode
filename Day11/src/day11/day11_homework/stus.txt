@@ -1,0 +1,3 @@
+Student{name='The Shey', age=18, gender='男'}
+Student{name='JackLove', age=20, gender='男'}
+Student{name='Ning', age=21, gender='男'}

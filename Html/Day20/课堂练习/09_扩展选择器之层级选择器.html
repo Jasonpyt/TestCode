@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>包含选择器</title>
+		<!--
+			通过父标签 再找子标签
+			 
+			A B{}
+			A标签中的所有B标签都进行样式修改
+		-->
+		<style type="text/css">
+			div span{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<span>我是div中的span</span>
+			<div>我是div中div</div>
+			<div>
+				<span>我是div中的div中的span</span>
+			</div>
+		</div>
+		<b>
+			<span>我是b标签中span</span>
+		</b>	
+	</body>
+</html>

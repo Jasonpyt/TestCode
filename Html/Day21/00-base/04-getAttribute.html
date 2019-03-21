@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>form.html</title>
+
+    <meta charset="UTF-8">
+  </head>
+  
+  <body>
+  	   
+	   <form name="form1" action="test.html" method="post" >
+  	   	  <input type="text" name="tname" value="传智播客12周年_1"  id="tid_1"  ><br>
+				  <input type="text" name="tname" value="传智播客12周年_2"  id="tid_2"  ><br>
+				  <input type="text" name="tname" value="传智播客12周年_3"  id="tid_3"  ><br>
+				  <input type="button" name="ok" value="保存1"/>
+  	 </form>
+	   
+	  您喜欢的城市:<br> 
+	   <ul>
+	   	 <li id="bj" value="beijing">北京</li>
+			 <li id="sh" value="shanghai">上海</li>
+			 <li id="cq" value="chongqing">重庆</li>
+	   </ul>
+	  
+	  您喜欢的游戏:<br> 
+	   <ul>
+	   	 <li id="fk" value="fankong">反恐</li>
+			 <li id="ms" value="moshou">魔兽</li>
+			 <li id="xj" value="xingji">星际争霸</li>
+	   </ul>   
+  </body>
+  
+  <script  type="text/javascript">
+	  //<li id="xj" value="xingji">星际争霸</li>节点的value属性的值
+      // 根据 id找 指定v标签
+      var  xjE = document.getElementById("xj");
+      
+      //  对于 属性如果不是该标签 必有的 那么就无法直接.调用 
+      // 
+//    alert(xjE.value);
+     var  v = xjE.getAttribute("value");
+     alert(v);
+  </script>
+</html>

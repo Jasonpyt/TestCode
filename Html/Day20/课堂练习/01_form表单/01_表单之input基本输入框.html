@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>表单标签</title>
+	</head>
+	<body>
+		<!--
+			<form> 表单是一个容器。
+				作用，将表单中的数据提交给服务器。
+				
+				属性
+				 action: 代表提交路径。    #
+				 method: 代表提交方式。   get/post
+				     get   post
+				     请求的时候 Request对象的时候，详细讲一下两者的区别
+				     简述一下区别：
+				      1：get请求 请求参数会在地址栏显示,而post请求不会显示。
+				          get请求参数在请求行中；post在请求体。
+				      2：get不安全，post相对安全。
+				      3：get提交有大小限制，256kb。post理论上没有大小的限制。
+				  name:给该表单起个名字。     
+		        想要将数据提交到服务器，必须在form表单里面。
+		        
+		       表单中包含的叫   表单项
+		                文本输入框
+		                密码输入框
+		                单选输入框
+		                复选输入框    
+		            <input>  
+		            	<input> 标签用于获得用户输入信息，type属性值不同，搜集方式不同
+		         基本的type属性
+		             - text：文本框，单行的输入字段，用户可在其中输入文本。默认宽度为 20 个字符
+					 - password：密码框，密码字段。该字段中的字符以黑圆显示。
+					 - radio：单选框，表示一组互斥选项按钮中的一个。当一个按钮被选中，之前选中的按钮就变为非选中的 
+					 - submit：提交按钮。提交按钮会把表单数据发送到服务器。一般不写name属性，否则将“提交”两个字提交到服务器。
+            
+            我们提交表单的目的 ：
+              将表单中 输入框中的数据提交给服务器。
+              服务器如何识别的呢？
+                通过 input标签中
+                  name 属性 和value属性进行识别 
+                  
+                  name属性就是传递给服务器识别的。
+                  value就是在表单中输入的数据
+                  
+                radio 肯定是一组标签
+                           是一组的话name属性要一样。因为要互斥。
+                                需要设置value的值    
+                                
+                                
+                  
+		            		
+		-->
+		<form name="myform" action="#" method="get">
+			<!--普通文本输入框-->
+			用户名：<input type="text" name="username" placeholder="请录入用户名"/><br/>
+			<!--密码输入框-->
+			密&nbsp;&nbsp;码：<input type="password" name="password"/><br />
+			<!--单选输入框-->
+			性   别：<input type="radio" name="sex" value="boy"/>男<input type="radio" name="sex" value="girl"/>女<br/>
+			<!--提交按钮-->
+			<input type="submit"  value="点我呀"/>
+		</form>
+	</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>邮箱验证</title>
+	</head>
+	<body>
+		
+		</body>
+		<script type="text/javascript">
+			var email = prompt("请输入E-mail地址：","");
+			if(email != null && email.length >0){
+				checkEmail(email);
+			}
+			function checkEmail(email){
+				var re = /^([0-9a-zA-Z_-])+@([0-9a-zA-Z_-])+(\.[0-9a-zA-Z]+)$/;
+				if(re.test(email)){
+					alert("恭喜,你输入的E-mail正确");
+				}else{
+					alert("输入错误请重新输入");
+				}
+			}
+			
+		</script>
+	
+</html>

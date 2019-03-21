@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>form.html</title>
+		<meta charset="UTF-8">
+  </head>
+  <body>
+       <ul id="city">
+		   	 <li id="bj" name="beijing">北京</li>
+				 <li id="sh" name="shanghai">上海</li>
+				 <li id="cq" name="chongqing">重庆</li>
+		   </ul>
+  </body>
+  
+  <script  type="text/javascript">
+     	//删除<ul id="city"> 下<li id="bj" name="beijing">北京</li>这个节点</ul>
+
+	 		//获取北京的父节点
+	 		// 北京节点不能自杀  
+	 		// 根据父节点  删除掉子节点
+	 		// 获取北京的父节点
+	 		var cityE = document.getElementById("city");
+	 		// 获取北京节点
+	 		var bjE = document.getElementById("bj");
+	 		
+	 		cityE.removeChild(bjE);
+  </script>
+</html>

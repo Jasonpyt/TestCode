@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>form.html</title>
+    <meta  charset="UTF-8"/>
+  </head>
+  
+  <body>
+  	   <form name="form1" action="test.html" method="post" >
+  	   	  <input type="text" name="username" value="传智播客12周年_1"  id="tid"  onchange="" >
+		  		<input type="button" name="ok" value="保存1"/>
+  	   </form>
+  </body>
+
+  
+  <script type="text/javascript">
+      //输出 <input type="text" name="username" value="传智播客12周年_1"  id="tid" >标签value属性的值
+    // 1:获取 指定的标签
+     // 根据id获取元素 
+     var ele = document.getElementById("tid");
+     // 因为value属性是 input标签中必须有的属性  所以找到了 标签元素 可以直接.的方式获取
+//   alert(ele.value);
+   
+		//输出 <input type="text" name="username" value="传智播客12周年_1"  id="tid" >标签type属性的值
+	   alert(ele.type);
+  </script>
+  
+  
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>计时器</title>
+	</head>
+	<body>
+		<strong>操作成功</strong>
+		<br />
+		<span id="time">5</span>秒后回到主页
+		<a href="http://172.16.64.1/WebAuth_auth.asp?ip=192.168.34.48&b4122">返回</a>
+	</body>
+	<script type="text/javascript">
+		var t = 5;
+		timer = setInterval(refresh,1000);
+		function refresh(){
+			document.getElementById("time").innerHTML = --t;
+			if(t == 1){
+				clearInterval(timer);
+				location.href = "http://172.16.64.1/WebAuth_auth.asp?ip=192.168.34.48&b4122";
+			}
+		}
+	</script>
+</html>

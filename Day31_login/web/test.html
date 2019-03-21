@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>让a标签的跳转失效</title>
+</head>
+<!--
+   让  a标签 跳转失效
+       <a href="javascript:void(0)">跳转。。。</a>
+          href="javascript:;" 将跳转路径设置为空的 也就是不再跳转
+-->
+<body>
+    <a href="javascript:;" onclick="tan()">百度</a>
+
+
+    <script type="text/javascript">
+        function tan(){
+            alert("弹弹弹！！！");
+        }
+
+    </script>
+</body>
+</html>

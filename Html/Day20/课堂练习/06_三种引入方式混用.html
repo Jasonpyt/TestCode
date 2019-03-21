@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>三种引入css方式混用</title>
+		<!--
+			页面加载  瀑布式加载 从上向下加载
+			
+			会一层层覆盖
+			
+		-->
+		<!--
+			行内样式  
+			   黄绿色
+			内部样式 
+			  红色
+			外部样式
+			  紫色
+		-->
+		<!--外部引入-->
+		<link rel="stylesheet" href="css/mycss.css" type="text/css"/>
+		<!--内部引入-->
+		<style type="text/css">
+			div{
+				color: red;
+			}
+		</style>
+		
+	</head>
+	<body>
+		<div style="color: greenyellow;">开心就拍手</div>
+	    <div>开心就喝酒</div>
+	</body>
+</html>

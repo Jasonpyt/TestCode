@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>css引入方式之内部引入</title>
+		<!--
+			内部引入
+			  在 <head>标签中 
+
+			  	  使用 style标签引入css样式
+                 为了提高兼容性 需要写一个属性 type="text/css"
+                 <style>
+                                            选择器{
+			                            属性名：属性值；
+			                            属性名：属性值...
+                                            	
+                            }
+                 </style>
+                 
+                 特点：具有一定的复用性,只针对当前页面有用
+                            可读性一般  
+                 
+		-->
+		<style type="text/css">
+			/*
+			 * 这里面可以写 css的代码
+			 */
+			div{
+				color: red;
+				background-color: yellow;
+			}
+		</style>
+	</head>
+	<body>	
+		<div>我是一个小青蛙，呱呱呱呱呱</div>
+		<div>它也是一只小青蛙</div>
+	</body>
+</html>

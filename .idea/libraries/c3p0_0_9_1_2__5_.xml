@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="c3p0-0.9.1.2 (5)">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/Day31_login/web/WEB-INF/lib/c3p0-0.9.1.2.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day31_login/web/WEB-INF/lib/commons-dbutils-1.4.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day31_login/web/WEB-INF/lib/javax.servlet.jsp.jstl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day31_login/web/WEB-INF/lib/jstl-impl.jar!/" />
+      <root url="jar://$PROJECT_DIR$/Day31_login/web/WEB-INF/lib/mysql-connector-java-5.1.37-bin.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

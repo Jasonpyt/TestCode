@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>form.html</title>
+		<meta charset="UTF-8">
+  </head>
+  <body>
+	   
+	  您喜欢的城市:<br> 
+	   <ul id="city">
+	   	 <li id="bj" value="beijing">北京</li>
+			 <li id="sh" value="shanghai">上海</li>
+			 <li id="cq" value="chongqing">重庆</li>
+	   </ul>
+	  
+	  您喜欢的游戏:<br> 
+	   <ul>
+	   	 <li id="fk" value="fangkong">反恐</li>
+			 <li id="ms" value="moshou">魔兽</li>
+			 <li id="xj" value="xingji">星际争霸</li>
+	   </ul>
+  </body>
+  <script  type="text/javascript">
+     //增加城市节点 <li id="tj" value="tianjin">天津</li>放置到city下
+     // 1:获取父节点 
+        var cityE = document.getElementById("city");
+        //2： 创建一个新的子节点
+       var  tjE =  document.createElement("li");// 就相当于 <li></li>
+       // 对 tjE添加属性
+          tjE.setAttribute("id","tj");
+          tjE.setAttribute("value","tianjin");
+        //添加标签体
+          tjE.innerHTML="天津";
+          
+        // 3： 将字节点添加到父节点下
+        cityE.appendChild(tjE);
+  </script>
+</html>

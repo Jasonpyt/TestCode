@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>form</title>
+		
+	</head>
+	<body>
+		<form name="form1" action="test.html" method="post" >
+  	   	  <input type="text" name="tname" value="传智播客12周年_1"  id="tid_1"  ><br>
+				  <input type="text" name="tname" value="传智播客12周年_2"  id="tid_2"  ><br>
+				  <input type="text" name="tname" value="传智播客12周年_3"  id="tid_3"  ><br>
+				  <input type="button" name="ok" value="保存1"/>
+  	   </form>
+
+	</body>
+	
+	<script type="text/javascript">
+		//通过元素的name属性获取所有元素的引用  name="tname"
+    var tnameEs =  document.getElementsByName("tname");
+    
+    //将这些元素的  value属性值 输出
+//  for(var i = 0; i<tnameEs.length;i++){
+//  	alert(tnameEs[i].value);
+//  }
+   
+   //为每个文本框(<input name="tname">)增加change（onchange）事件,当值改变时,输出改变的值
+   for(var i =0; i<tnameEs.length;i++){
+   	   // tnameEs[i]   每一个文本框 
+   	   tnameEs[i].onchange=function(){
+   	   	   // this 就是触发事件的哪个事件源 
+   	   	   alert(this.value);
+   	   }
+   }
+
+	
+		</script>
+</html>

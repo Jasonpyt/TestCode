@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!--
+   1:xml文档声明
+   2：引入约束
+   3：根据提示写代码
+-->
+<beans xmlns="http://www.itcast.cn/bean"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.itcast.cn/bean bean-schema.xsd"
+>
+  <import resource=""></import>
+  <bean id="" className="">
+      <property name="" value=""></property>
+  </bean>
+  <import resource=""></import>
+</beans>

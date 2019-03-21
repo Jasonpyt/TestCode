@@ -1,0 +1,5 @@
+#haha
+#Thu Nov 01 18:58:56 CST 2018
+zhangsan=90
+lisi=100
+wangwu=85

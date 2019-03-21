@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>css引入方式之内部引入</title>
+		<!--
+			外部引入
+			   提高复用性
+			   
+			   首先得有css文件
+			     项目下 css目录有个mycss.css文件
+			     
+		   连接引入
+		     通过一个标签   
+		     link标签进行引入
+                               属性 rel:关系 relation  
+                    href:引入文件路径     
+                    
+                    特点 
+	                     复用性强
+	                     可读性极差
+		-->
+		<link rel="stylesheet" href="css/mycss.css" type="text/css" />
+	
+	</head>
+	<body>	
+		<div>我是一个小青蛙，呱呱呱呱呱</div>
+		<div>它也是一只小青蛙</div>
+	</body>
+</html>

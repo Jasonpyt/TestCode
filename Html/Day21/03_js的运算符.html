@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>js的运算符</title>
+		<script type="text/javascript">
+				var a = 10;
+				var b = 10;
+				alert(a == b);//true;
+				alert(a === b);//true
+				
+				//== 与 === 的区别就是 == 比较的是参数不管数据类型,而===既要考虑参数也要考虑数据类型
+				var c = "10";
+				alert(c == a);//true
+				alert(c === b)//false
+				
+				var f = true;//真
+				f = " ";//真
+				f = 0;//假
+				f = null;//假
+				f = undefined;
+				if(f){
+					alert("真");
+				}else{
+					alert("假");
+				}
+				var p = "abc";
+				alert(p - 1 );//NaN;不是数字 not a number
+				
+				var pi = 3.14;
+				var s = 2;
+				alert(pi / s);//1.57不会像java中一样取整的
+			var f =	function("abc" + "c");
+				alert(f);
+		</script>
+	</head>
+	<body>
+	<input type="button" id="b1" value="点我" />
+	</body>
+</html>

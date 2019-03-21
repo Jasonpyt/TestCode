@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>行级元素与块级元素的转换</title>
+		<!--
+			选择器{display:属性值}
+				常用的属性值：
+					inline：此元素将显示为行内元素（行内元素默认的display属性值）
+					block：此元素将显为块元素（块元素默认的display属性值）
+					none：此元素将被隐藏，不显示，也不占用页面空间。
+					
+			样式属性中添加 
+			  display属性
+			    选择的值是 none  该元素隐藏
+			    选择的值是 inline 将块级元素转换成行内元素
+			  选择的值是block    将行内元素变成块级元素  
+		-->
+		<style type="text/css">
+			#hi{
+				background-color: red;
+				width: 100px;
+				height: 100px;
+				display:inline;
+			}
+			
+			#ha{
+				background-color: yellow;
+				width: 100px;
+				height: 100px;
+				display:inline;
+			}
+			#s1{
+				background-color: green;
+				display: block;
+			}
+			#s2{
+				background-color: pink;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="hi">我是一个块儿，哈哈哈</div>
+		<div id="ha">我是一个块儿，哈哈哈</div>
+		
+		<span id="s1">我是一个行内元素</span>
+		<span id="s2">我是一个行内元素</span>
+	</body>
+</html>
